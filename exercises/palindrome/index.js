@@ -7,6 +7,15 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+
+//SOLUTION ONE
+function palindrome(str) {
+    const reversedSTR = str.split('').reverse().join('');
+    return reversedSTR === str
+}
+
+//SOLUTION TWO
+// Go learn how every() works
+// link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 
 module.exports = palindrome;

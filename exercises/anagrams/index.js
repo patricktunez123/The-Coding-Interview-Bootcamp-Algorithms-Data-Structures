@@ -16,7 +16,7 @@ function cleanStringUp(str){
     // replace() removes pancutuations and spaces
     // split() makes a string into an array, and we had to do it cuz sort() is an array method
     // join() takes back an arry back to string
-    return str.replace(/[^\w]/g, '').split('').sort().join('');
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
 }
 
 module.exports = anagrams;
